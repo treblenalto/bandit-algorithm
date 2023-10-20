@@ -115,7 +115,6 @@ if __name__ == "__main__":
             for trial in range(5):
                 total_reward = 0
 
-                # agent = EpsilonGreedy(epsilon=0.1, arms=arms)
                 for name, agent in zip(
                     ["Greedy", "EpsilonGreedy", "UCB", "ThompsonSampling"],
                     [Greedy(arms=arms), EpsilonGreedy(arms=arms), UCB(arms=arms), ThompsonSampling(arms=arms)],
